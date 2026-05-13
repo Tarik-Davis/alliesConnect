@@ -1,0 +1,352 @@
+
+> backend@1.0.0 test
+> jest --detectOpenHandles
+
+FAIL tests/api/auth.test.js (5.32 s)
+  ● Console
+
+    console.log
+      Successfully connected to MySQL database
+
+      at log (server.js:29:13)
+
+  ● Auth API Endpoints › POST /api/auth/forgot-password › should return success message when email exists
+
+    thrown: "Exceeded timeout of 5000 ms for a test.
+    Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+
+      213 |
+      214 |   describe('POST /api/auth/forgot-password', () => {
+    > 215 |     it('should return success message when email exists', async () => {
+          |     ^
+      216 |       mockPool.promise().query
+      217 |         // 1: Find user by email
+      218 |         .mockResolvedValueOnce([[{ user_id: 1, username: 'johndoe' }]])
+
+      at it (tests/api/auth.test.js:215:5)
+      at describe (tests/api/auth.test.js:214:3)
+      at Object.describe (tests/api/auth.test.js:30:1)
+
+FAIL tests/api/resources.test.js
+  ● Console
+
+    console.log
+      Successfully connected to MySQL database
+
+      at log (server.js:29:13)
+
+    console.error
+      Error fetching resources: Error: DB Error
+          at Object.<anonymous> (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/tests/api/resources.test.js:54:54)
+          at Promise.finally.completed (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:1557:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:1497:10)
+          at _callCircusTest (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:1007:40)
+          at processTicksAndRejections (node:internal/process/task_queues:95:5)
+          at _runTest (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:947:3)
+          at /home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:849:7
+          at _runTestsForDescribeBlock (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:862:11)
+          at _runTestsForDescribeBlock (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:857:11)
+          at _runTestsForDescribeBlock (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:857:11)
+          at run (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:761:3)
+          at runAndTransformResultsToJestFormat (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:1918:21)
+          at jestAdapter (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/runner.js:101:19)
+          at runTestInternal (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-runner/build/index.js:275:16)
+          at runTest (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-runner/build/index.js:343:7)
+
+      141 |       res.json(result);
+      142 |     } catch (err) {
+    > 143 |       console.error("Error fetching resources:", err);
+          |               ^
+      144 |       res.status(500).json({ error: "Failed to fetch resources" });
+      145 |     }
+      146 |   });
+
+      at error (api/resources.js:143:15)
+
+    console.error
+      GOOGLE_MAPS_API_KEY is not set in .env
+
+      18 |     const apiKey = process.env.GOOGLE_MAPS_API_KEY;
+      19 |     if (!apiKey) {
+    > 20 |       console.error("GOOGLE_MAPS_API_KEY is not set in .env");
+         |               ^
+      21 |       return resolve(null);
+      22 |     }
+      23 |
+
+      at error (utils/geocode.js:20:15)
+      at geocodeAddress (utils/geocode.js:17:10)
+      at geocodeAddress (api/resources.js:283:26)
+
+    console.error
+      GOOGLE_MAPS_API_KEY is not set in .env
+
+      18 |     const apiKey = process.env.GOOGLE_MAPS_API_KEY;
+      19 |     if (!apiKey) {
+    > 20 |       console.error("GOOGLE_MAPS_API_KEY is not set in .env");
+         |               ^
+      21 |       return resolve(null);
+      22 |     }
+      23 |
+
+      at error (utils/geocode.js:20:15)
+      at geocodeAddress (utils/geocode.js:17:10)
+      at geocodeAddress (api/resources.js:283:26)
+
+  ● Resources API Endpoints › POST /api/resources › should create a resource
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 1
+
+      120 |       expect(res.statusCode).toEqual(201);
+      121 |       expect(res.body.message).toMatch(/success/i);
+    > 122 |       expect(res.body.resource_id).toBe(2);
+          |                                    ^
+      123 |     });
+      124 |
+      125 |     it("should return 400 if required fields are missing", async () => {
+
+      at Object.toBe (tests/api/resources.test.js:122:36)
+
+FAIL tests/api/events.test.js
+  ● Console
+
+    console.log
+      Successfully connected to MySQL database
+
+      at log (server.js:29:13)
+
+    console.error
+      Error fetching events: Error: DB Error
+          at Object.<anonymous> (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/tests/api/events.test.js:42:54)
+          at Promise.finally.completed (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:1557:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:1497:10)
+          at _callCircusTest (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:1007:40)
+          at processTicksAndRejections (node:internal/process/task_queues:95:5)
+          at _runTest (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:947:3)
+          at /home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:849:7
+          at _runTestsForDescribeBlock (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:862:11)
+          at _runTestsForDescribeBlock (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:857:11)
+          at _runTestsForDescribeBlock (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:857:11)
+          at run (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:761:3)
+          at runAndTransformResultsToJestFormat (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:1918:21)
+          at jestAdapter (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/runner.js:101:19)
+          at runTestInternal (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-runner/build/index.js:275:16)
+          at runTest (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-runner/build/index.js:343:7)
+
+      71 |       res.json(rows);
+      72 |     } catch (err) {
+    > 73 |       console.error("Error fetching events:", err);
+         |               ^
+      74 |       res.status(500).json({ error: "Failed to fetch events" });
+      75 |     }
+      76 |   });
+
+      at error (api/events.js:73:15)
+
+    console.error
+      GOOGLE_MAPS_API_KEY is not set in .env
+
+      18 |     const apiKey = process.env.GOOGLE_MAPS_API_KEY;
+      19 |     if (!apiKey) {
+    > 20 |       console.error("GOOGLE_MAPS_API_KEY is not set in .env");
+         |               ^
+      21 |       return resolve(null);
+      22 |     }
+      23 |
+
+      at error (utils/geocode.js:20:15)
+      at geocodeAddress (utils/geocode.js:17:10)
+      at geocodeAddress (api/events.js:195:24)
+
+  ● Events API Endpoints › POST /api/events › should create an event
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 5
+    Received: 1
+
+      108 |       expect(res.statusCode).toEqual(201);
+      109 |       expect(res.body.message).toMatch(/success/i);
+    > 110 |       expect(res.body.event_id).toBe(5);
+          |                                 ^
+      111 |     });
+      112 |
+      113 |     it("should return 400 if required fields are missing", async () => {
+
+      at Object.toBe (tests/api/events.test.js:110:33)
+
+PASS tests/api/organizations.test.js
+  ● Console
+
+    console.log
+      Successfully connected to MySQL database
+
+      at log (server.js:29:13)
+
+    console.error
+      Error verifying EIN: Error: Network error
+          at Object.<anonymous> (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/tests/api/organizations.test.js:98:42)
+          at Promise.finally.completed (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:1557:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:1497:10)
+          at _callCircusTest (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:1007:40)
+          at processTicksAndRejections (node:internal/process/task_queues:95:5)
+          at _runTest (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:947:3)
+          at /home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:849:7
+          at _runTestsForDescribeBlock (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:862:11)
+          at _runTestsForDescribeBlock (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:857:11)
+          at _runTestsForDescribeBlock (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:857:11)
+          at run (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:761:3)
+          at runAndTransformResultsToJestFormat (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:1918:21)
+          at jestAdapter (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/runner.js:101:19)
+          at runTestInternal (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-runner/build/index.js:275:16)
+          at runTest (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-runner/build/index.js:343:7)
+
+      80 |       });
+      81 |     } catch (err) {
+    > 82 |       console.error("Error verifying EIN:", err);
+         |               ^
+      83 |       res.status(500).json({ error: "Failed to verify EIN" });
+      84 |     }
+      85 |   });
+
+      at error (api/organizations.js:82:15)
+
+    console.log
+      Organization invite sent to invite@example.com for Test Org
+
+      at log (api/organizations.js:481:17)
+
+PASS tests/api/volunteers.test.js
+  ● Console
+
+    console.log
+      Successfully connected to MySQL database
+
+      at log (server.js:29:13)
+
+    console.error
+      Error fetching volunteer opportunities: Error: DB Error
+          at Object.<anonymous> (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/tests/api/volunteers.test.js:36:54)
+          at Promise.finally.completed (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:1557:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:1497:10)
+          at _callCircusTest (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:1007:40)
+          at processTicksAndRejections (node:internal/process/task_queues:95:5)
+          at _runTest (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:947:3)
+          at /home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:849:7
+          at _runTestsForDescribeBlock (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:862:11)
+          at _runTestsForDescribeBlock (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:857:11)
+          at _runTestsForDescribeBlock (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:857:11)
+          at run (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:761:3)
+          at runAndTransformResultsToJestFormat (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:1918:21)
+          at jestAdapter (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/runner.js:101:19)
+          at runTestInternal (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-runner/build/index.js:275:16)
+          at runTest (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-runner/build/index.js:343:7)
+
+      59 |       res.json(rows);
+      60 |     } catch (err) {
+    > 61 |       console.error("Error fetching volunteer opportunities:", err);
+         |               ^
+      62 |       res
+      63 |         .status(500)
+      64 |         .json({ error: "Failed to fetch volunteer opportunities" });
+
+      at error (api/volunteers.js:61:15)
+
+PASS tests/api/admin.test.js
+  ● Console
+
+    console.log
+      Successfully connected to MySQL database
+
+      at log (server.js:29:13)
+
+    console.error
+      Error fetching pending providers: Error: DB Error
+          at Object.<anonymous> (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/tests/api/admin.test.js:40:54)
+          at Promise.finally.completed (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:1557:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:1497:10)
+          at _callCircusTest (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:1007:40)
+          at processTicksAndRejections (node:internal/process/task_queues:95:5)
+          at _runTest (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:947:3)
+          at /home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:849:7
+          at _runTestsForDescribeBlock (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:862:11)
+          at _runTestsForDescribeBlock (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:857:11)
+          at _runTestsForDescribeBlock (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:857:11)
+          at run (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:761:3)
+          at runAndTransformResultsToJestFormat (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:1918:21)
+          at jestAdapter (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/runner.js:101:19)
+          at runTestInternal (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-runner/build/index.js:275:16)
+          at runTest (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-runner/build/index.js:343:7)
+
+      17 |         res.json(rows);
+      18 |       } catch (err) {
+    > 19 |         console.error("Error fetching pending providers:", err);
+         |                 ^
+      20 |         res.status(500).json({ error: "Failed to fetch pending providers" });
+      21 |       }
+      22 |     },
+
+      at error (api/admin.js:19:17)
+
+    console.error
+      Error fetching audit logs: Error: DB Error
+          at Object.<anonymous> (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/tests/api/admin.test.js:68:54)
+          at Promise.finally.completed (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:1557:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:1497:10)
+          at _callCircusTest (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:1007:40)
+          at processTicksAndRejections (node:internal/process/task_queues:95:5)
+          at _runTest (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:947:3)
+          at /home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:849:7
+          at _runTestsForDescribeBlock (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:862:11)
+          at _runTestsForDescribeBlock (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:857:11)
+          at _runTestsForDescribeBlock (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:857:11)
+          at run (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:761:3)
+          at runAndTransformResultsToJestFormat (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/jestAdapterInit.js:1918:21)
+          at jestAdapter (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-circus/build/runner.js:101:19)
+          at runTestInternal (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-runner/build/index.js:275:16)
+          at runTest (/home/fidel/Documents/KSU/Capstone/Group4AlliesConnect/backend/node_modules/jest-runner/build/index.js:343:7)
+
+      107 |       res.json(rows);
+      108 |     } catch (err) {
+    > 109 |       console.error("Error fetching audit logs:", err);
+          |               ^
+      110 |       res.status(500).json({ error: "Failed to fetch audit logs" });
+      111 |     }
+      112 |   });
+
+      at error (api/admin.js:109:15)
+
+PASS tests/middleware/rateLimit.test.js
+
+Test Suites: 3 failed, 4 passed, 7 total
+Tests:       3 failed, 101 passed, 104 total
+Snapshots:   0 total
+Time:        6.31 s
+Ran all test suites.
+
+Jest has detected the following 1 open handle potentially keeping Jest from exiting:
+
+  ●  TCPSERVERWRAP
+
+      223 |
+      224 |       const res = await request(app)
+    > 225 |         .post('/api/auth/forgot-password')
+          |          ^
+      226 |         .send({ email: 'john@example.com' });
+      227 |
+      228 |       expect(res.statusCode).toEqual(200);
+
+      at Test.serverAddress (node_modules/supertest/lib/test.js:63:35)
+      at new Test (node_modules/supertest/lib/test.js:49:14)
+      at Object.obj.<computed> [as post] (node_modules/supertest/index.js:40:18)
+      at Object.post (tests/api/auth.test.js:225:10)
+

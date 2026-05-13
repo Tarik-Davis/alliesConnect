@@ -1,0 +1,702 @@
+[
+    {
+        "id": 1,
+        "name": "Homes for Hearts",
+        "position": {
+            "lat": 33.749,
+            "lng": -84.388
+        },
+        "color": "yellow",
+        "address": "3030 Allway Road, Kennesaw, GA 30230",
+        "hours": "8:30 am - 5:30 pm M-F\n12:00 pm - 5:30 pm Sat\nClosed Sundays",
+        "phone": "888-555-1212",
+        "website": "http://homesforhearts.org",
+        "website_display": "homesforhearts.org",
+        "socialMedia": [
+            {
+                "name": "Facebook",
+                "link": "#"
+            },
+            {
+                "name": "X",
+                "link": "#"
+            },
+            {
+                "name": "Instagram",
+                "link": "#"
+            }
+        ],
+        "languages": [
+            "English",
+            "Spanish",
+            "French"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        "id": 2,
+        "name": "Community Food Bank",
+        "position": {
+            "lat": 33.755,
+            "lng": -84.39
+        },
+        "color": "green",
+        "address": "1545 Ralph David Abernathy Blvd, Atlanta, GA 30310",
+        "website": "http://atlfoodbank.org",
+        "website_display": "atlfoodbank.org",
+        "image": "https://images.unsplash.com/photo-1593113514605-7f4159f81d59?auto=format&fit=crop&w=500&q=80",
+        "hours": "8:30 am - 5:30 pm M-F\n12:00 pm - 5:30 pm Sat\nClosed Sundays",
+        "phone": "888-555-1212",
+        "socialMedia": [
+            {
+                "name": "Facebook",
+                "link": "#"
+            },
+            {
+                "name": "X",
+                "link": "#"
+            },
+            {
+                "name": "Instagram",
+                "link": "#"
+            }
+        ],
+        "languages": [
+            "English",
+            "Spanish",
+            "French"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 3,
+        "name": "Legal Aid Clinic",
+        "position": {
+            "lat": 33.76,
+            "lng": -84.38
+        },
+        "color": "blue",
+        "address": "100 Peachtree St NW, Atlanta, GA 30303",
+        "website": "http://atlantalegalaid.org",
+        "website_display": "atlantalegalaid.org",
+        "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=500&q=80",
+        "hours": "8:30 am - 5:30 pm M-F\n12:00 pm - 5:30 pm Sat\nClosed Sundays",
+        "phone": "888-555-1212",
+        "socialMedia": [
+            {
+                "name": "Facebook",
+                "link": "#"
+            },
+            {
+                "name": "X",
+                "link": "#"
+            },
+            {
+                "name": "Instagram",
+                "link": "#"
+            }
+        ],
+        "languages": [
+            "English",
+            "Spanish",
+            "French"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 4,
+        "name": "Shelter of Hope",
+        "position": {
+            "lat": 33.74,
+            "lng": -84.375
+        },
+        "color": "pink",
+        "address": "800 Donald Lee Hollowell Pkwy, Atlanta, GA 30318",
+        "website": "http://shelterofhope.org",
+        "website_display": "shelterofhope.org",
+        "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=500&q=80",
+        "hours": "8:30 am - 5:30 pm M-F\n12:00 pm - 5:30 pm Sat\nClosed Sundays",
+        "phone": "888-555-1212",
+        "socialMedia": [
+            {
+                "name": "Facebook",
+                "link": "#"
+            },
+            {
+                "name": "X",
+                "link": "#"
+            },
+            {
+                "name": "Instagram",
+                "link": "#"
+            }
+        ],
+        "languages": [
+            "English",
+            "Spanish",
+            "French"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 5,
+        "name": "Veterans Assistance Center",
+        "position": {
+            "lat": 33.77,
+            "lng": -84.395
+        },
+        "color": "yellow",
+        "address": "1200 Ponce De Leon Ave NE, Atlanta, GA 30306",
+        "website": "http://vetassist.org",
+        "website_display": "vetassist.org",
+        "image": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=500&q=80",
+        "hours": "8:30 am - 5:30 pm M-F\n12:00 pm - 5:30 pm Sat\nClosed Sundays",
+        "phone": "888-555-1212",
+        "socialMedia": [
+            {
+                "name": "Facebook",
+                "link": "#"
+            },
+            {
+                "name": "X",
+                "link": "#"
+            },
+            {
+                "name": "Instagram",
+                "link": "#"
+            }
+        ],
+        "languages": [
+            "English",
+            "Spanish",
+            "French"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 6,
+        "name": "Downtown Soup Kitchen",
+        "position": {
+            "lat": 33.738,
+            "lng": -84.4
+        },
+        "color": "green",
+        "address": "400 MLK Jr Dr SE, Atlanta, GA 30312",
+        "website": "http://downtownsoup.org",
+        "website_display": "downtownsoup.org",
+        "image": "https://images.unsplash.com/photo-1574482620826-40685ca5ebe2?auto=format&fit=crop&w=500&q=80",
+        "hours": "8:30 am - 5:30 pm M-F\n12:00 pm - 5:30 pm Sat\nClosed Sundays",
+        "phone": "888-555-1212",
+        "socialMedia": [
+            {
+                "name": "Facebook",
+                "link": "#"
+            },
+            {
+                "name": "X",
+                "link": "#"
+            },
+            {
+                "name": "Instagram",
+                "link": "#"
+            }
+        ],
+        "languages": [
+            "English",
+            "Spanish",
+            "French"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 7,
+        "name": "Family Counseling Services",
+        "position": {
+            "lat": 33.765,
+            "lng": -84.37
+        },
+        "color": "blue",
+        "address": "250 Georgia Ave SE, Atlanta, GA 30312",
+        "website": "http://familycounsel.org",
+        "website_display": "familycounsel.org",
+        "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=500&q=80",
+        "hours": "8:30 am - 5:30 pm M-F\n12:00 pm - 5:30 pm Sat\nClosed Sundays",
+        "phone": "888-555-1212",
+        "socialMedia": [
+            {
+                "name": "Facebook",
+                "link": "#"
+            },
+            {
+                "name": "X",
+                "link": "#"
+            },
+            {
+                "name": "Instagram",
+                "link": "#"
+            }
+        ],
+        "languages": [
+            "English",
+            "Spanish",
+            "French"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 8,
+        "name": "Safe Harbor Housing",
+        "position": {
+            "lat": 33.745,
+            "lng": -84.36
+        },
+        "color": "pink",
+        "address": "600 West Peachtree St NW, Atlanta, GA 30308",
+        "website": "http://safeharborhousing.org",
+        "website_display": "safeharborhousing.org",
+        "image": "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=500&q=80",
+        "hours": "8:30 am - 5:30 pm M-F\n12:00 pm - 5:30 pm Sat\nClosed Sundays",
+        "phone": "888-555-1212",
+        "socialMedia": [
+            {
+                "name": "Facebook",
+                "link": "#"
+            },
+            {
+                "name": "X",
+                "link": "#"
+            },
+            {
+                "name": "Instagram",
+                "link": "#"
+            }
+        ],
+        "languages": [
+            "English",
+            "Spanish",
+            "French"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 9,
+        "name": "Youth Mentorship Program",
+        "position": {
+            "lat": 33.78,
+            "lng": -84.38
+        },
+        "color": "yellow",
+        "address": "900 Piedmont Ave NE, Atlanta, GA 30309",
+        "website": "http://youthmentorship.org",
+        "website_display": "youthmentorship.org",
+        "image": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=500&q=80",
+        "hours": "8:30 am - 5:30 pm M-F\n12:00 pm - 5:30 pm Sat\nClosed Sundays",
+        "phone": "888-555-1212",
+        "socialMedia": [
+            {
+                "name": "Facebook",
+                "link": "#"
+            },
+            {
+                "name": "X",
+                "link": "#"
+            },
+            {
+                "name": "Instagram",
+                "link": "#"
+            }
+        ],
+        "languages": [
+            "English",
+            "Spanish",
+            "French"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 10,
+        "name": "Senior Wellness Clinic",
+        "position": {
+            "lat": 33.73,
+            "lng": -84.39
+        },
+        "color": "green",
+        "address": "300 Northside Dr SW, Atlanta, GA 30313",
+        "website": "http://seniorwellness.org",
+        "website_display": "seniorwellness.org",
+        "image": "https://images.unsplash.com/photo-1538136369062-094eeea1ceb3?auto=format&fit=crop&w=500&q=80",
+        "hours": "8:30 am - 5:30 pm M-F\n12:00 pm - 5:30 pm Sat\nClosed Sundays",
+        "phone": "888-555-1212",
+        "socialMedia": [
+            {
+                "name": "Facebook",
+                "link": "#"
+            },
+            {
+                "name": "X",
+                "link": "#"
+            },
+            {
+                "name": "Instagram",
+                "link": "#"
+            }
+        ],
+        "languages": [
+            "English",
+            "Spanish",
+            "French"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 11,
+        "name": "Tenant Rights Organization",
+        "position": {
+            "lat": 33.755,
+            "lng": -84.35
+        },
+        "color": "blue",
+        "address": "1500 Dekalb Ave NE, Atlanta, GA 30307",
+        "website": "http://tenantrights.org",
+        "website_display": "tenantrights.org",
+        "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=500&q=80",
+        "hours": "8:30 am - 5:30 pm M-F\n12:00 pm - 5:30 pm Sat\nClosed Sundays",
+        "phone": "888-555-1212",
+        "socialMedia": [
+            {
+                "name": "Facebook",
+                "link": "#"
+            },
+            {
+                "name": "X",
+                "link": "#"
+            },
+            {
+                "name": "Instagram",
+                "link": "#"
+            }
+        ],
+        "languages": [
+            "English",
+            "Spanish",
+            "French"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 12,
+        "name": "Emergency Relief Fund",
+        "position": {
+            "lat": 33.76,
+            "lng": -84.41
+        },
+        "color": "pink",
+        "address": "500 10th St NW, Atlanta, GA 30318",
+        "website": "http://emergencyrelief.org",
+        "website_display": "emergencyrelief.org",
+        "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=500&q=80",
+        "hours": "8:30 am - 5:30 pm M-F\n12:00 pm - 5:30 pm Sat\nClosed Sundays",
+        "phone": "888-555-1212",
+        "socialMedia": [
+            {
+                "name": "Facebook",
+                "link": "#"
+            },
+            {
+                "name": "X",
+                "link": "#"
+            },
+            {
+                "name": "Instagram",
+                "link": "#"
+            }
+        ],
+        "languages": [
+            "English",
+            "Spanish",
+            "French"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 13,
+        "name": "Job Training Initiative",
+        "position": {
+            "lat": 33.785,
+            "lng": -84.395
+        },
+        "color": "yellow",
+        "address": "700 Monroe Dr NE, Atlanta, GA 30308",
+        "website": "http://jobtraining.org",
+        "website_display": "jobtraining.org",
+        "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=500&q=80",
+        "hours": "8:30 am - 5:30 pm M-F\n12:00 pm - 5:30 pm Sat\nClosed Sundays",
+        "phone": "888-555-1212",
+        "socialMedia": [
+            {
+                "name": "Facebook",
+                "link": "#"
+            },
+            {
+                "name": "X",
+                "link": "#"
+            },
+            {
+                "name": "Instagram",
+                "link": "#"
+            }
+        ],
+        "languages": [
+            "English",
+            "Spanish",
+            "French"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 14,
+        "name": "Community Garden Project",
+        "position": {
+            "lat": 33.725,
+            "lng": -84.385
+        },
+        "color": "green",
+        "address": "200 Hank Aaron Dr SE, Atlanta, GA 30315",
+        "website": "http://communitygarden.org",
+        "website_display": "communitygarden.org",
+        "image": "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=500&q=80",
+        "hours": "8:30 am - 5:30 pm M-F\n12:00 pm - 5:30 pm Sat\nClosed Sundays",
+        "phone": "888-555-1212",
+        "socialMedia": [
+            {
+                "name": "Facebook",
+                "link": "#"
+            },
+            {
+                "name": "X",
+                "link": "#"
+            },
+            {
+                "name": "Instagram",
+                "link": "#"
+            }
+        ],
+        "languages": [
+            "English",
+            "Spanish",
+            "French"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 15,
+        "name": "Immigration Support Network",
+        "position": {
+            "lat": 33.768,
+            "lng": -84.36
+        },
+        "color": "blue",
+        "address": "1100 Howell Mill Rd NW, Atlanta, GA 30318",
+        "website": "http://immigrationsupport.org",
+        "website_display": "immigrationsupport.org",
+        "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=500&q=80",
+        "hours": "8:30 am - 5:30 pm M-F\n12:00 pm - 5:30 pm Sat\nClosed Sundays",
+        "phone": "888-555-1212",
+        "socialMedia": [
+            {
+                "name": "Facebook",
+                "link": "#"
+            },
+            {
+                "name": "X",
+                "link": "#"
+            },
+            {
+                "name": "Instagram",
+                "link": "#"
+            }
+        ],
+        "languages": [
+            "English",
+            "Spanish",
+            "French"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 16,
+        "name": "Women's Empower Center",
+        "position": {
+            "lat": 33.742,
+            "lng": -84.42
+        },
+        "color": "pink",
+        "address": "350 Marietta St NW, Atlanta, GA 30313",
+        "website": "http://womensempower.org",
+        "website_display": "womensempower.org",
+        "image": "https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=500&q=80",
+        "hours": "8:30 am - 5:30 pm M-F\n12:00 pm - 5:30 pm Sat\nClosed Sundays",
+        "phone": "888-555-1212",
+        "socialMedia": [
+            {
+                "name": "Facebook",
+                "link": "#"
+            },
+            {
+                "name": "X",
+                "link": "#"
+            },
+            {
+                "name": "Instagram",
+                "link": "#"
+            }
+        ],
+        "languages": [
+            "English",
+            "Spanish",
+            "French"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 17,
+        "name": "After School Tutoring",
+        "position": {
+            "lat": 33.775,
+            "lng": -84.405
+        },
+        "color": "yellow",
+        "address": "1300 North Ave NW, Atlanta, GA 30318",
+        "website": "http://afterschool.org",
+        "website_display": "afterschool.org",
+        "image": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=500&q=80",
+        "hours": "8:30 am - 5:30 pm M-F\n12:00 pm - 5:30 pm Sat\nClosed Sundays",
+        "phone": "888-555-1212",
+        "socialMedia": [
+            {
+                "name": "Facebook",
+                "link": "#"
+            },
+            {
+                "name": "X",
+                "link": "#"
+            },
+            {
+                "name": "Instagram",
+                "link": "#"
+            }
+        ],
+        "languages": [
+            "English",
+            "Spanish",
+            "French"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 18,
+        "name": "Mobile Health Clinic",
+        "position": {
+            "lat": 33.735,
+            "lng": -84.37
+        },
+        "color": "green",
+        "address": "450 Boulevard NE, Atlanta, GA 30312",
+        "website": "http://mobilehealth.org",
+        "website_display": "mobilehealth.org",
+        "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=500&q=80",
+        "hours": "8:30 am - 5:30 pm M-F\n12:00 pm - 5:30 pm Sat\nClosed Sundays",
+        "phone": "888-555-1212",
+        "socialMedia": [
+            {
+                "name": "Facebook",
+                "link": "#"
+            },
+            {
+                "name": "X",
+                "link": "#"
+            },
+            {
+                "name": "Instagram",
+                "link": "#"
+            }
+        ],
+        "languages": [
+            "English",
+            "Spanish",
+            "French"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 19,
+        "name": "Substance Recovery Group",
+        "position": {
+            "lat": 33.75,
+            "lng": -84.355
+        },
+        "color": "blue",
+        "address": "850 Edgewood Ave NE, Atlanta, GA 30307",
+        "website": "http://substancerecovery.org",
+        "website_display": "substancerecovery.org",
+        "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=500&q=80",
+        "hours": "8:30 am - 5:30 pm M-F\n12:00 pm - 5:30 pm Sat\nClosed Sundays",
+        "phone": "888-555-1212",
+        "socialMedia": [
+            {
+                "name": "Facebook",
+                "link": "#"
+            },
+            {
+                "name": "X",
+                "link": "#"
+            },
+            {
+                "name": "Instagram",
+                "link": "#"
+            }
+        ],
+        "languages": [
+            "English",
+            "Spanish",
+            "French"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 20,
+        "name": "Disability Advocacy Office",
+        "position": {
+            "lat": 33.765,
+            "lng": -84.415
+        },
+        "color": "pink",
+        "address": "1400 Spring St NW, Atlanta, GA 30309",
+        "website": "http://disabilityadvocacy.org",
+        "website_display": "disabilityadvocacy.org",
+        "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=500&q=80",
+        "hours": "8:30 am - 5:30 pm M-F\n12:00 pm - 5:30 pm Sat\nClosed Sundays",
+        "phone": "888-555-1212",
+        "socialMedia": [
+            {
+                "name": "Facebook",
+                "link": "#"
+            },
+            {
+                "name": "X",
+                "link": "#"
+            },
+            {
+                "name": "Instagram",
+                "link": "#"
+            }
+        ],
+        "languages": [
+            "English",
+            "Spanish",
+            "French"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    }
+]

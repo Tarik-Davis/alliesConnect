@@ -1,0 +1,254 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+:root {
+  --gold: #c9a84c;
+  --gold-dark: #b8963e;
+}
+
+.navbar {
+  background-color: var(--gold);
+}
+
+.navbar .navbar-brand {
+  color: black;
+}
+
+.navbar .nav-link {
+  color: white;
+}
+
+.btn-outline-navbar {
+  color: white;
+  border: 2px solid white !important;
+  background: transparent;
+  border-radius: 4px;
+  padding: 6px 20px;
+  margin-left: 10px;
+}
+
+.btn-outline-navbar.btn-gold {
+  border-color: white !important;
+}
+
+.btn-outline-navbar:hover {
+  background-color: white;
+  color: var(--gold);
+}
+
+.btn-gold {
+  background-color: var(--gold) !important;
+  border: 2px solid var(--gold) !important;
+  color: black !important;
+  font-size: 1.1rem;
+  border-radius: 4px;
+}
+
+.btn-gold:hover {
+  background-color: var(--gold-dark) !important;
+  color: black !important;
+}
+
+.btn-white {
+  background-color: white !important;
+  color: black !important;
+  font-size: 1.1rem;
+  border: 2px solid var(--gold);
+  border-radius: 4px;
+}
+
+.btn-white:hover {
+  background-color: whitesmoke !important;
+  color: black !important;
+}
+
+.outline-warning {
+  background-color: white !important;
+  color: black !important;
+  border: 2px solid var(--gold) !important;
+  border-radius: 8px !important;
+}
+
+.outline-warning:hover,
+.outline-warning:focus,
+.outline-warning:active {
+  background-color: whitesmoke !important;
+  color: black !important;
+  border-color: var(--gold) !important;
+}
+
+.btn-secondary,
+.btn-outline-secondary {
+  background-color: white !important;
+  color: black !important;
+  font-size: 1.1rem;
+  border: 2px solid var(--gold) !important;
+  border-radius: 4px;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus,
+.btn-outline-secondary:active {
+  background-color: whitesmoke !important;
+  color: black !important;
+  border-color: var(--gold) !important;
+}
+
+.btn-secondary:disabled,
+.btn-secondary.disabled,
+.btn-outline-secondary:disabled,
+.btn-outline-secondary.disabled {
+  background-color: #f8f8f8 !important;
+  color: black !important;
+  border-color: var(--gold) !important;
+  opacity: 0.65;
+}
+
+.btn-green {
+  background-color: #218838 !important;
+  border: solid 2px #218838 !important;
+  color: white !important;
+  font-size: 1.1rem;
+  border-radius: 4px;
+}
+
+.btn-green:hover {
+  background-color: #186328 !important;
+  color: white !important;
+}
+
+.btn-red {
+  background-color: #DB3344 !important;
+  border: solid 2px #DB3344 !important;
+  color: white !important;
+  font-size: 1.1rem;
+  border-radius: 4px;
+}
+
+.btn-red:hover {
+  background-color: #A51D2B !important;
+  color: white !important;
+}
+
+.feature-box {
+  border: 4px solid var(--gold);
+  border-radius: 8px;
+  padding: 40px;
+}
+
+.feature-icon {
+  font-size: 80px;
+}
+
+.home-container {
+  padding: 60px 20px;
+}
+
+.event-container {
+  padding: 60px 20px;
+}
+
+.event-list-scroll {
+  max-height: 580px;
+  overflow-y: auto;
+  padding-right: 8px;
+  margin-top: 1rem;
+}
+
+.login-container {
+  padding: 60px 20px;
+}
+
+.register-container {
+  padding: 60px 20px;
+}
+
+.text-container {
+  text-align: center;
+}
+
+.filter-label {
+  font-size: large;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.navbar-username {
+  display: inline-flex;
+  align-items: center;
+  color: black !important;
+}
+
+.modal-wide .modal-dialog {
+  max-width: 95%;
+}
+
+.modal-half .modal-dialog {
+  max-width: 50%;
+}
+
+/* Modal button fallback theme (does not override explicit button class styles) */
+:where(.modal) :where(button:not(.btn-close)) {
+  background-color: white;
+  color: var(--gold);
+  border: 2px solid var(--gold);
+  border-radius: 8px;
+}
+
+:where(.modal) :where(button:not(.btn-close)):where(:hover, :focus, :active) {
+  background-color: whitesmoke;
+  color: black;
+  border-color: var(--gold);
+}
+
+:where(.modal) :where(button:not(.btn-close)):where(:disabled, .disabled) {
+  background-color: #f8f8f8;
+  color: black;
+  border-color: var(--gold);
+  opacity: 0.65;
+}
+
+/* Keep modal tables contained on mobile */
+@media (max-width: 768px) {
+  .modal .modal-dialog,
+  .modal-wide .modal-dialog,
+  .modal-half .modal-dialog {
+    max-width: calc(100vw - 1rem) !important;
+    margin: 0.5rem auto !important;
+  }
+
+  .modal .modal-body {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .modal .modal-body table,
+  .modal .modal-body .table {
+    width: max-content;
+    min-width: 100%;
+  }
+}

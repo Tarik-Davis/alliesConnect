@@ -1,0 +1,5 @@
+backend_setup_instructions.md
+
+# Environment variables
+*.env
+.env
